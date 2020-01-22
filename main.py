@@ -18,10 +18,10 @@ print(sum(s.cost for s in ans), ans)
 
 # draw
 colors = ['black', 'blue', 'green', 'red', 'pink', 'orange']
-plt.figure()
+plt.figure(dpi=300)
 _, ax = plt.subplots()
 pos = problem.display_data or problem.node_coords
-nx.draw_networkx_nodes(G, pos=pos, ax=ax)
+nx.draw_networkx_nodes(G, pos=pos, ax=ax, node_color=(0.4157, 0.3529, 0.3490))
 nx.draw_networkx_labels(G, pos=pos, labels={i: str(i) for i in range(1, len(G.nodes) + 1)}, font_size=8, font_color='white')
 for i in range(len(ans)):
     solution = ans[i]
