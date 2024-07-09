@@ -20,4 +20,4 @@ pytz==2019.3
 six==1.13.0
 tsplib95==0.6.1
 wcwidth==0.1.8
-zipp==0.6.0
+zipp==3.19.1
